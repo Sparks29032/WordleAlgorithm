@@ -7,7 +7,14 @@ Each guess, it eliminates words that it knows cannot the target from the Words f
 
 Then, it selects its best guess again based on the letter frequencies metric.
 
-Averages around 4.47 guesses per word (includes a lot of weirder words most standard dictionaries do not have).
+Averages around 4.47 guesses per word.
+
+### Comparison to other algorithms
+Most algorithms generally average 3.5 guesses per word and do so by attempting to eliminate as many words as possible per guess.
+
+This bot instead tries to pick the most likely word (imitating what a player would do on their last guess) each step.
+
+A good theoretical would attempt to eliminate as many words as possible for the first 5 guesses, but use my bot to make the 6th and final guess.
 
 # How to use
 ### Playing the game
@@ -31,3 +38,8 @@ Then it waits for a 5 letter input consisting of Bs, Gs, and Ys corresponding th
 Then it will show you its next best guess.
 
 This process repeats until the word is guessed.
+
+### Additional functionalities
+You can generate a list of good first words by running FirstWord (a sample generation is included in GoodFirstWords).
+
+To see personally how this algorithm performs on every word in the included words list, run TestGuesser.
