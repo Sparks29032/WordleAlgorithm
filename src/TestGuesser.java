@@ -14,7 +14,7 @@ public class TestGuesser {
 	}
 	
 	public static void main(String[] args) throws IOException {
-		TestGuesser tg = new TestGuesser("Words2", "GoodFirstWords");
+		TestGuesser tg = new TestGuesser("Words", "GoodFirstWords");
 		tg.testManyTimes(2500);
 	}
 	

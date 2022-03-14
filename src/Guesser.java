@@ -10,7 +10,7 @@ public class Guesser {
 	}
 	
 	public static void main(String[] args) throws IOException {
-		Guesser g = new Guesser("Words2", "GoodFirstWords");
+		Guesser g = new Guesser("Words", "GoodFirstWords");
 		g.manuelGuess();
 	}
 	

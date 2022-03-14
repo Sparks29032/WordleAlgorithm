@@ -48,6 +48,7 @@ public class WordRanker {
 		}
 	}
 	
+	//gives 
 	public int[] getWordScores(ArrayList<String> words, char[] rankedLetters) {
 		int[] wordScores = new int[words.size()];
 		String used;
@@ -57,8 +58,8 @@ public class WordRanker {
 			for (int j = 0; j < words.get(i).length(); j++) {
 				curr = "" + words.get(i).charAt(j);
 				if (used.contains(curr)) {
+					// heavily penalizes duplicates
 					wordScores[i] += 26;
-					//***EDIT***
 				}
 				else {
 					wordScores[i] += findIdx(rankedLetters, words.get(i).charAt(j));

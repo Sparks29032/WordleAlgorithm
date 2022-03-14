@@ -4,7 +4,7 @@ import java.util.*;
 public class FirstWord {
 	public static void main(String[] args) throws IOException {
 		FirstWord fw = new FirstWord();
-		fw.generateFirstWordsList("Words2", "GoodFirstWords");
+		fw.generateFirstWordsList("Words", "GoodFirstWords");
 	}
 	
 	public void generateFirstWordsList(String wordBank, String firstWords) throws IOException {

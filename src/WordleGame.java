@@ -6,7 +6,6 @@ public class WordleGame {
 	
 	public static void main(String[] args) throws IOException {
 		WordleGame wg = new WordleGame("Words");
-		wg.getWords("WordleWords", "Words2");
 		wg.playGame("party");
 	}
 	
@@ -25,6 +24,8 @@ public class WordleGame {
 		br.close();
 	}
 	
+	// was used during testing (no longer used)
+	/*
 	public void getWords(String wordBank, String wordFile) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader(wordBank));
 		ArrayList<String> words = new ArrayList<String>();
@@ -51,6 +52,7 @@ public class WordleGame {
 		}
 		pw.close();
 	}
+	*/
 	
 	public void playGame(String target) {
 		if (!isWord(target)) {
